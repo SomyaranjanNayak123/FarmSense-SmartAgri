@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+build/
+dist/
+.eggs/
+.pytest_cache/
+.streamlit/
+
+# Venvs - never commit (300MB+)
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Models - large binaries (68MB) - train instead, or use Git LFS
+*.pkl
+*.h5
+*.model
+*.bin
+# Keep small meta
+!model_meta.pkl
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.trace.db
+instance/
+farm_sense.db
+farm_sense.db-journal
+
+# Node
+node_modules/
+npm-debug.log*
+package-lock.json
+.next/
+out/
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+.vs/
+*.suo
+*.user
+*.swp
+
+# Env
+.env
+.env.local
+.env.production
+
+# Secrets
+*.pem
+*.key
+serviceAccountKey.json
